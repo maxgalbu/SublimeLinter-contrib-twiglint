@@ -10,7 +10,7 @@
 
 """This module exports the Twiglint plugin class."""
 
-from SublimeLinter.lint import Linter, util
+from SublimeLinter.lint import Linter
 
 
 class Twiglint(Linter):
