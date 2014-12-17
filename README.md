@@ -3,7 +3,7 @@ SublimeLinter-contrib-twiglint
 
 [![Build Status](https://travis-ci.org/maxgalbu/SublimeLinter-contrib-twiglint.svg?branch=master)](https://travis-ci.org/maxgalbu/SublimeLinter-contrib-twiglint)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [twiglint](https://github.com/maxgalbu/SublimeLinter-contrib-twiglint). It will be used with files that have the “twig” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [twig-lint](https://github.com/asm89/twig-lint). It will be used with files that have the “twig” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
