@@ -1,30 +1,31 @@
 SublimeLinter-contrib-twiglint
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-twiglint.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-twiglint)
+[![Build Status](https://travis-ci.org/maxgalbu/SublimeLinter-contrib-twiglint.svg?branch=master)](https://travis-ci.org/maxgalbu/SublimeLinter-contrib-twiglint)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [twiglint](__linter_homepage__). It will be used with files that have the “__syntax__” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [twiglint](https://github.com/maxgalbu/SublimeLinter-contrib-twiglint). It will be used with files that have the “twig” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that `twiglint` is installed on your system. To install `twiglint`, do the following:
+Before using this plugin, you must ensure that `twig-lint` is installed on your system. To install `twig-lint`, type the following in a terminal:
 
-1. Install Other.
+```
+composer global require "asm89/twig-lint" "@stable"
+```
 
-1. Install `twiglint` by typing the following in a terminal:
-   ```
-   <package manager> install twiglint
-   ```
-
-
-**Note:** This plugin requires `twiglint` __version__ or later.
+**Note:** This plugin requires `twiglint` 1.0.1 or later.
 
 ### Linter configuration
-In order for `twiglint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
+In order for `twig-lint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
-Once you have installed and configured `twiglint`, you can proceed to install the SublimeLinter-contrib-twiglint plugin if it is not yet installed.
+To make sure that `twig-lint` works, you have two choices:
+
+- Add `~/composer/vendor/bin` to your PATH
+- Add the path where `twig-lint `is to the “paths” global setting.
+
+Once you have installed and configured `twig-lint`, you can proceed to install the SublimeLinter-contrib-twiglint plugin if it is not yet installed.
 
 ### Plugin installation
 Please use [Package Control][pc] to install the linter plugin. This will ensure that the plugin will be updated when new versions are available. If you want to install from source so you can modify the source code, you probably know what you are doing so we won’t cover that here.
@@ -38,12 +39,7 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
-In addition to the standard SublimeLinter settings, SublimeLinter-contrib-twiglint provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
-
-|Setting|Description|Inline Setting|Inline Override|
-|:------|:----------|:------------:|:-------------:|
-|foo|Something.|&#10003;| |
-|bar|Something else.| |&#10003;|
+Twig-lint does not have any options.
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
