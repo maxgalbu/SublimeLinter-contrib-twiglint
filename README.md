@@ -29,9 +29,9 @@ To make sure that `twig-lint` works, you have two choices:
 {
     "user": {
         "paths": {
-            "linux": ['~/.composer/vendor/bin'],
-            "osx": ['~/.composer/vendor/bin'],
-            "windows": ['C:\\Users\yourname\\.composer\\vendor\\bin']
+            "linux": ["~/.composer/vendor/bin"],
+            "osx": ["~/.composer/vendor/bin"],
+            "windows": ["C:\\Users\\yourname\\.composer\\vendor\\bin"]
         },
     }
 }
