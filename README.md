@@ -23,7 +23,7 @@ In order for `twig-lint` to be executed by SublimeLinter, you must ensure that i
 To make sure that `twig-lint` works, you have two choices:
 
 - Add `~/.composer/vendor/bin` to your PATH
-- Add the path where `twig-lint` in the SublimeLinter user config (Package Settings > SublimeLinter > Settings - User) in the “paths” key, example:
+- Add the path to the folder where `twig-lint` is installed in the SublimeLinter user config (Package Settings > SublimeLinter > Settings - User) in the “paths” key, example:
 
 ```json
 {
