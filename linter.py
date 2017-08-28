@@ -20,7 +20,7 @@ class Twiglint(Linter):
     syntax = ('twig', 'html (twig)', 'html')
     cmd = 'twig-lint lint'
     version_args = '--version'
-    version_re = r'version v(?P<version>\d+\.\d+\.\d+)'
+    version_re = r'v(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 1.0.1'
     regex = (
         r'(?ism)KO in [^(]+\(line (?P<line>\d+)\).+?>> \d+ .+?>> (?P<message>[^\r\n]+)'
