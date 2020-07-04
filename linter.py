@@ -17,14 +17,13 @@ class Twiglint(Linter):
 
     """Provides an interface to twiglint."""
 
-    syntax = ('twig', 'html (twig)', 'html')
     cmd = 'twig-lint lint'
-    version_args = '--version'
-    version_re = r'v(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.0.1'
     regex = (
         r'(?ism)KO in [^(]+\(line (?P<line>\d+)\).+?>> \d+ .+?>> (?P<message>[^\r\n]+)'
     )
     multiline = True
     line_col_base = (1, 1)
     tempfile_suffix = 'twig'
+    default = {
+        selector: 'source.twig, source.html.twig, source.html'
+    }
