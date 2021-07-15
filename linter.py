@@ -24,6 +24,6 @@ class Twiglint(Linter):
     multiline = True
     line_col_base = (1, 1)
     tempfile_suffix = 'twig'
-    default = {
-        selector: 'source.twig, source.html.twig, source.html'
+    defaults = {
+        'selector': 'text.html.basic, text.html.twig'
     }
