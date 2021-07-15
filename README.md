@@ -6,7 +6,7 @@ SublimeLinter-contrib-twiglint
 This linter plugin for [SublimeLinter][docs] provides an interface to [twig-lint](https://github.com/asm89/twig-lint). It will be used with files that have the “twig” syntax.
 
 ## Installation
-SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
+SublimeLinter must be installed in order to use this plugin. If SublimeLinter is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
 Before using this plugin, you must ensure that `twig-lint` is installed on your system. To install `twig-lint`, type the following in a terminal:
@@ -23,16 +23,14 @@ In order for `twig-lint` to be executed by SublimeLinter, you must ensure that i
 To make sure that `twig-lint` works, you have two choices:
 
 - Add `~/.composer/vendor/bin` to your PATH
-- Add the path to the folder where `twig-lint` is installed in the SublimeLinter user config (Package Settings > SublimeLinter > Settings - User) in the “paths” key, example:
+- Add the path to the folder where `twig-lint` is installed in the SublimeLinter user config (Preferences > Package Settings > SublimeLinter > Settings) in the “paths” key, example:
 
 ```json
 {
-    "user": {
-        "paths": {
-            "linux": ["~/.composer/vendor/bin"],
-            "osx": ["~/.composer/vendor/bin"],
-            "windows": ["C:\\Users\\yourname\\.composer\\vendor\\bin"]
-        },
+    "paths": {
+        "linux": ["~/.composer/vendor/bin"],
+        "osx": ["~/.composer/vendor/bin"],
+        "windows": ["C:\\Users\\yourname\\.composer\\vendor\\bin"]
     }
 }
 ```
@@ -46,7 +44,7 @@ To install via Package Control, do the following:
 
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
-1. When the plugin list appears, type `twiglint`. Among the entries you should see `SublimeLinter-contrib-twiglint`. If that entry is not highlighted, use the keyboard or mouse to select it.
+2. When the plugin list appears, type `twiglint`. Among the entries you should see `SublimeLinter-contrib-twiglint`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
